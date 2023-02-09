@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('DJANGO_SEC_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['e-shop-application.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store',
-    'whitenoise.runserver_nostatic',
+    
     
 
 ]
