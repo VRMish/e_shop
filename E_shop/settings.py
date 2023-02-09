@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('DJANGO_SEC_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['e-shop-application.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
