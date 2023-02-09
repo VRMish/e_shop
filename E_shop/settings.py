@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SEC_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -141,7 +141,7 @@ STRIPE_PUB_KEY = os.environ.get('STRIPE_PUB_KEY')
 
 STRIPE_SEC_KEY = os.environ.get('STRIPE_SEC_KEY')
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 cloudinary.config(
   cloud_name = os.environ.get('CLOUD_NAME'),
@@ -149,3 +149,4 @@ cloudinary.config(
   api_secret = os.environ.get('CLOUDINARY_API_SEC_KEY'),
   secure = True
 )
+STATIC_ROOT = BASE_DIR / "staticfiles"
