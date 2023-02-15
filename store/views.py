@@ -151,8 +151,8 @@ def payment_with_stripe(request):
     session = stripe.checkout.Session.create(
         line_items=[*li],
         mode='payment',
-        success_url='http://localhost:8000/payment/success',
-        cancel_url='http://localhost:8000/payment_fail/cancel',
+        success_url='https://e-shop-application.onrender.com/payment/success',
+        cancel_url='https://e-shop-application.onrender.com/cancel',
     )
 
     return redirect(session.url, code=303)
